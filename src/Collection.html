@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>KHMER ATELIER | Heritage Meets Modern Elegance</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Text:wght@400;700&amp;family=Manrope:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind Config Verbatim -->
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "secondary-fixed": "#ffe088",
+                    "secondary": "#735c00",
+                    "on-secondary-fixed-variant": "#574500",
+                    "on-primary-fixed-variant": "#8e0f28",
+                    "surface-variant": "#e4e2dd",
+                    "primary": "#570013",
+                    "tertiary-fixed": "#e5e2e1",
+                    "inverse-surface": "#30312e",
+                    "on-error-container": "#93000a",
+                    "on-error": "#ffffff",
+                    "surface-container-lowest": "#ffffff",
+                    "tertiary-container": "#3e3d3d",
+                    "on-tertiary-fixed-variant": "#474746",
+                    "on-primary-fixed": "#40000b",
+                    "surface-container-high": "#eae8e3",
+                    "tertiary-fixed-dim": "#c8c6c5",
+                    "on-secondary": "#ffffff",
+                    "tertiary": "#282727",
+                    "outline-variant": "#e0bfbf",
+                    "surface-container-highest": "#e4e2dd",
+                    "primary-container": "#800020",
+                    "on-primary-container": "#ff828a",
+                    "surface": "#fbf9f4",
+                    "on-tertiary-container": "#aaa8a7",
+                    "on-primary": "#ffffff",
+                    "surface-bright": "#fbf9f4",
+                    "on-surface-variant": "#584141",
+                    "secondary-fixed-dim": "#e9c349",
+                    "primary-fixed-dim": "#ffb3b5",
+                    "on-tertiary": "#ffffff",
+                    "inverse-primary": "#ffb3b5",
+                    "error": "#ba1a1a",
+                    "primary-fixed": "#ffdada",
+                    "on-tertiary-fixed": "#1c1b1b",
+                    "on-surface": "#1b1c19",
+                    "on-secondary-container": "#745c00",
+                    "inverse-on-surface": "#f2f1ec",
+                    "surface-tint": "#af2b3e",
+                    "error-container": "#ffdad6",
+                    "on-secondary-fixed": "#241a00",
+                    "background": "#fbf9f4",
+                    "on-background": "#1b1c19",
+                    "outline": "#8c7071",
+                    "surface-container": "#f0eee9",
+                    "surface-container-low": "#f5f3ee",
+                    "secondary-container": "#fed65b",
+                    "surface-dim": "#dbdad5"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "margin-mobile": "1.25rem",
+                    "stack-md": "2rem",
+                    "gutter": "2rem",
+                    "stack-xl": "8rem",
+                    "container-max": "1440px",
+                    "margin-tablet": "2.5rem",
+                    "margin-desktop": "5rem",
+                    "stack-lg": "4rem"
+            },
+            "fontFamily": {
+                    "headline-lg": ["Libre Caslon Text"],
+                    "body-md": ["Manrope"],
+                    "headline-lg-mobile": ["Libre Caslon Text"],
+                    "headline-md": ["Libre Caslon Text"],
+                    "label-lg": ["Manrope"],
+                    "display-lg": ["Libre Caslon Text"],
+                    "body-lg": ["Manrope"],
+                    "label-sm": ["Manrope"]
+            },
+            "fontSize": {
+                    "headline-lg": ["40px", {"lineHeight": "48px", "fontWeight": "400"}],
+                    "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                    "headline-lg-mobile": ["32px", {"lineHeight": "40px", "fontWeight": "400"}],
+                    "headline-md": ["28px", {"lineHeight": "36px", "fontWeight": "400"}],
+                    "label-lg": ["14px", {"lineHeight": "20px", "letterSpacing": "0.1em", "fontWeight": "600"}],
+                    "display-lg": ["64px", {"lineHeight": "72px", "letterSpacing": "-0.02em", "fontWeight": "400"}],
+                    "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+                    "label-sm": ["12px", {"lineHeight": "16px", "letterSpacing": "0.05em", "fontWeight": "500"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+        }
+        
+        .gold-expand {
+            position: relative;
+        }
+        .gold-expand::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background-color: #ffe088;
+            transition: width 0.3s ease;
+        }
+        .gold-expand:hover::after {
+            width: 100%;
+        }
+
+        .no-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body-md no-scrollbar">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-surface/80 dark:bg-surface-container/80 backdrop-blur-md border-b border-outline-variant/30">
+<div class="flex justify-between items-center px-margin-mobile md:px-margin-desktop h-20 w-full max-w-container-max mx-auto">
+<!-- Brand Logo -->
+<a class="font-headline-md text-headline-md tracking-widest text-primary dark:text-inverse-primary" href="index.html">
+                KHMER Collection
+            </a>
+<!-- Navigation Links -->
+<div class="hidden md:flex items-center gap-8">
+<a class="font-label-lg text-label-lg text-on-surface-variant hover:text-primary transition-colors" href="#">Home</a>
+<a class="font-label-lg text-label-lg text-primary dark:text-inverse-primary border-b-2 border-secondary-fixed pb-1" href="#">Collection</a>
+<a class="font-label-lg text-label-lg text-on-surface-variant hover:text-primary transition-colors" href="#">About</a>
+
+</div>
+<!-- Action Icons -->
+<div class="flex items-center gap-6">
+<button class="material-symbols-outlined text-primary hover:text-secondary-fixed transition-all duration-300 scale-95 duration-200 ease-in-out" data-icon="favorite">favorite</button>
+<button id="cart-button" class="material-symbols-outlined text-primary hover:text-secondary-fixed transition-all duration-300 scale-95 duration-200 ease-in-out relative" data-icon="shopping_bag" aria-label="View cart">shopping_bag
+<span id="cart-badge" class="hidden absolute -top-1 -right-1 bg-primary text-white text-[10px] w-4 h-4 rounded-full flex items-center justify-center font-bold">0</span>
+</button>
+<button class="md:hidden material-symbols-outlined text-primary" data-icon="menu" id="menu-toggle">menu</button>
+</div>
+</div>
+</nav>
+<!-- SideNavBar Overlay -->
+<aside class="h-full w-80 fixed right-0 top-0 z-[60] bg-surface shadow-xl translate-x-full transition-transform duration-500 flex flex-col p-6" id="side-nav">
+<div class="flex justify-between items-center mb-8">
+<div>
+<h2 class="font-headline-md text-headline-md text-primary">Collections</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">Exquisite Khmer Craftsmanship</p>
+</div>
+<button class="material-symbols-outlined text-primary" id="close-nav">close</button>
+</div>
+<nav class="flex flex-col gap-2">
+<a class="flex items-center gap-4 p-4 font-label-lg text-label-lg bg-primary-container text-on-primary-container font-bold rounded" href="#">
+<span class="material-symbols-outlined" data-icon="auto_awesome">auto_awesome</span> New Arrivals
+            </a>
+<a class="flex items-center gap-4 p-4 font-label-lg text-label-lg text-on-surface hover:bg-surface-container-low transition-colors rounded" href="#">
+<span class="material-symbols-outlined" data-icon="female">female</span> Women's Sampot
+            </a>
+<a class="flex items-center gap-4 p-4 font-label-lg text-label-lg text-on-surface hover:bg-surface-container-low transition-colors rounded" href="#">
+<span class="material-symbols-outlined" data-icon="male">male</span> Men's Sarongs
+            </a>
+<a class="flex items-center gap-4 p-4 font-label-lg text-label-lg text-on-surface hover:bg-surface-container-low transition-colors rounded" href="#">
+<span class="material-symbols-outlined" data-icon="styler">styler</span> Formal Suits
+            </a>
+<a class="flex items-center gap-4 p-4 font-label-lg text-label-lg text-on-surface hover:bg-surface-container-low transition-colors rounded" href="#">
+<span class="material-symbols-outlined" data-icon="diamond">diamond</span> Accessories
+            </a>
+</nav>
+<div class="mt-auto">
+<button class="w-full py-4 bg-primary text-on-primary font-label-lg text-label-lg uppercase gold-expand">
+                Book an Appointment
+            </button>
+</div>
+</aside>
+<main class="mt-20">
+<!-- Hero Section -->
+<section class="relative h-[921px] overflow-hidden flex items-center px-margin-mobile md:px-margin-desktop">
+<div class="absolute inset-0 z-0 scale-105">
+<img class="w-full h-full object-cover grayscale-[0.2]" data-alt="A cinematic, high-fashion photograph of a model draped in exquisite traditional Khmer golden silk 'Sampot' with intricate metallic embroidery. The lighting is dramatic and low-key, emphasizing the shimmering gold textures against a deep charcoal background, evoking a sense of luxury and cultural heritage. The composition is editorial and minimalist, perfectly aligned with a premium fashion brand's aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC3H2GtREdYQEYO0UcVB4T2uR8ehrTNGT1nX68Atr9U9aYL9C6MI2fEtl-GiblUr4G6VW4wuE5G20mpo8xZb07m62GCrOuDYeIE1sSc0eTzKabC0CJgXutcW5MMIZD5KCMVMU-6KNc8Viq3BS6Mavvm5NfLlcy2vLMkt3GvABgnp4Aof-OVXXCgw2rgrZIzGCk_I1MLNLJDqzILj-ETVTRRqi-Ijp6Syd_lozhBgNRxIQlZCA7x5Das2VXsJN6SaaOkagzZveN_Aw"/>
+<div class="absolute inset-0 bg-gradient-to-r from-primary/60 to-transparent"></div>
+</div>
+<div class="relative z-10 max-w-3xl">
+<p class="font-label-lg text-label-lg text-secondary-fixed mb-4">THE ATELIER PREMIERE</p>
+<h1 class="font-display-lg text-display-lg text-on-primary mb-8 leading-tight">Authenticity in <br/>Every Thread.</h1>
+<button class="px-10 py-5 bg-primary text-on-primary font-label-lg text-label-lg gold-expand flex items-center gap-4 group">
+                    EXPLORE THE COLLECTION
+                    <span class="material-symbols-outlined group-hover:translate-x-2 transition-transform" data-icon="arrow_forward">arrow_forward</span>
+</button>
+</div>
+</section>
+<!-- Heritage Section -->
+<section class="py-stack-xl px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-gutter items-center">
+<div class="md:col-span-5 order-2 md:order-1">
+<h2 class="font-label-lg text-label-lg text-secondary mb-4">OUR LEGACY</h2>
+<h3 class="font-headline-lg text-headline-lg text-primary mb-8">A 1,000 Year History of Khmer Weaving</h3>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-6">
+                        From the golden age of Angkor to the modern revival, Khmer silk weaving is an art form passed through generations of master artisans. Each pattern tells a story of royalty, divinity, and the resilient spirit of Cambodia.
+                    </p>
+<p class="font-body-md text-body-md text-on-surface-variant mb-8">
+                        Our atelier collaborates with rural weaving communities in Takéo and Siem Reap to preserve the rare 'Hol' (Ikat) and 'Pidan' (Pictorial) techniques, ensuring this heritage breathes in the contemporary world.
+                    </p>
+<a class="font-label-lg text-label-lg text-primary border-b border-primary pb-1 hover:text-secondary hover:border-secondary transition-colors" href="#">THE SILK PROCESS</a>
+</div>
+<div class="md:col-span-7 order-1 md:order-2">
+<div class="aspect-[4/5] bg-surface-container-high overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="Close-up detail of a traditional Khmer silk loom in a sun-drenched artisan workshop. The photo captures the complex arrangement of fine golden and crimson threads, highlighting the intricate manual labor of Cambodian weaving. Soft, natural light filters through the room, creating an atmosphere of peaceful, dedicated craftsmanship and timeless tradition." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDzSeQSV3Bc2IZ9Q_EZHLo_3LqOAQcPhRB1rLYWZQ81GX8zlxfmuA3RtkzcOBdWbKngpfwEs7LibC4tiXuFRQNxg4o3xslluH-akbxplPI9AYpjST20KRRXomYSs3ENE58IcUdqlu8OdHKWAcrfvyoUMDgNHGqG_jzR_4gjnYEyocBhumh2-aPHF84Qvzvn9HgROSzn1EQWrwzsMl2zaPNpbcbTrqn2ZoJSY9t5jIb63jZp72FKzVVigAtc-WOXYjAkOOx9K8vOWw"/>
+</div>
+</div>
+</div>
+</section>
+<!-- Curated Collections Grid -->
+<section class="py-stack-xl bg-surface-container-low px-margin-mobile md:px-margin-desktop">
+<div class="max-w-container-max mx-auto">
+<div class="flex justify-between items-end mb-16">
+<div>
+<h2 class="font-headline-lg text-headline-lg text-primary">Curated Collections</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mt-2">Boutique pieces for the modern connoisseur.</p>
+</div>
+<div class="hidden md:flex gap-4">
+</div>
+</div>
+<!-- Bento-style Grid -->
+<div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+<!-- Featured Product -->
+<div class="md:col-span-2 group">
+<div class="relative aspect-[3/4] overflow-hidden mb-6">
+<a href="Royal Silk Sampot Detail.html">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="A full-length fashion portrait of a woman in a formal, high-end Khmer 'Sampot Chon Kben' crafted from royal blue silk with gold embroidery. She stands in a minimalist, modern architectural space with clean lines and soft lighting. The image represents the 'Heritage Meets Modern Elegence' theme, showcasing traditional attire in a high-fashion contemporary setting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBlhJ1M33NnkWVO5MWXMxogEWngV1WLM7kXjVQ-NYmjZeA_0eJ8ebWK8Z7tY8y81AzXQ9rwnyvBHWHL2kLS9IvTlFJSgms7Z5rX36j-soEJa4bXxwc5A-d3q6RCll_VLs70vxWAuEELkw9eONtGblc6a9ReO0aJeSAaBhisXZNMeqzSp4LMCuT1gunf_YM7u4CPML2IFqZVGCS_ylzpPtbEqgVQIZykTL106xbRWNp2V55sbE-16bV3JQoFlMl25lqGdLgoXB-idA"/>
+</a>
+<div class="absolute bottom-6 left-6 flex gap-2">
+<span class="bg-primary/90 text-on-primary px-3 py-1 font-label-sm text-label-sm">LIMITED EDITION</span>
+</div>
+</div>
+<h4 class="font-headline-md text-headline-md text-primary">Royal Silk Sampot</h4>
+<p class="font-body-md text-body-md text-on-surface-variant">$1,450 USD</p>
+</div>
+<!-- Side Products -->
+<div class="flex flex-col gap-12">
+<div class="group">
+<div class="aspect-square overflow-hidden mb-4 bg-surface-container">
+<a href="HandwovenSarongDetail.html">
+<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" data-alt="Close up of a handcrafted Cambodian silk scarf with complex geometric patterns in shades of maroon and copper gold. The texture of the raw silk is visible, emphasizing the authentic artisanal quality. The lighting is soft and even, highlighting the subtle metallic sheen of the threads against a neutral, minimalist background." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCuhrph9GftGoaIg-IDJ7KW2MtzUbssRymhlNP8jgdP9ue9PNCBABUL7Qg-mJXYCPXH6pcLRf6O4LZ8cOee3K6E_Cqw1kIxDAZegXckHHkxu7T_TgFryr0bah9uTfsAoC_l10Z9xAeGoO2_EpV12F8H0j34ViOsrDKi0qMRI6tWtklAarDCIJFaBiPlmXr5-aH_VMNbOHVGzaG2zf7xhr3XlJHdCTDItn-hAlLYhg7cwx_Vl3Vs8TP7zEIFeMEh8ZrT8DzAd4IjtQ"/>
+</a>
+</div>
+<h4 class="font-label-lg text-label-lg text-primary uppercase">Handwoven Sarong</h4>
+<p class="font-body-md text-body-md text-on-surface-variant">$450 USD</p>
+</div>
+<div class="group">
+<div class="aspect-square overflow-hidden mb-4 bg-surface-container">
+<a href="HeriyageLapelSuitDetail.html">
+<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" data-alt="A male model wearing a contemporary charcoal grey suit with traditional Khmer silk lapels in a deep gold pattern. He is positioned in a modern office or studio setting with a clean, professional aesthetic. The image highlights the fusion of modern corporate fashion with historical Cambodian craftsmanship." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBb_iLE-5YN0UXBEM6n9BveW2LKA-sRBvMrqhhkHY-PGYoSXZVeAIL_0WFnuOkWcT5ahCesFtkAXHlsnfoz_oI0wxS2LohN7ewzAZJrGSqvj9RGJUJLIZi_CfUxYLc5VyzAfngy7gJZnZeKqyN76e70J0abEPwY9Z-j8P9jlJk1OuoTNZBKHk_hLRKE5hJJfdHevj4wq-mrKWImRTLgKOYnV7sV1iUXdVuljSkvZk64OSvFDab0WOe1Eq-_JA-cMcagvt9ZhItnIQ"/>
+</a>
+</div>
+<h4 class="font-label-lg text-label-lg text-primary uppercase">Heritage Lapel Suit</h4>
+<p class="font-body-md text-body-md text-on-surface-variant">$1,890 USD</p>
+</div>
+</div>
+        <a href="Artisan ScarfDetail.html" class="group block">
+            <div class="aspect-[3/5] overflow-hidden mb-6">
+                <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="A portrait of a Cambodian artisan woman meticulously embroidering a piece of crimson silk with fine gold thread. The shot is intimate and focused on her hands, showcasing the delicate and time-consuming process of traditional embellishment. The lighting is warm and directional, creating a reverent and exclusive mood consistent with a luxury brand." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDqY5T8wULLZC1U2HVUcuC9Eyd5vcrVDGpv1EJlIuCKcr50sExOAEKTnygBmAaOwyHjI39ml7XRW5AYLFdl3W4U5YilqXihUxDfI-K_sbgzgfnTh5B51HeLW0rcvaCJ35DJUWlYiiDGKXt42c6zd2JmNfzAfx-0hkbYEv7rVU8PjkJxAORHJKTEyN6Z5FU9SksCDMKD3KqAOKxnsnW0CIiPsY0erzsHgnv8LcoiOWZmYAmyDLgmdBuXNAAh48UxcS68tKGpRqFiVA"/>
+            </div>
+            <h4 class="font-headline-md text-headline-md text-primary">Artisan Scarf</h4>
+            <p class="font-body-md text-body-md text-on-surface-variant">$320 USD</p>
+        </a>
+</div>
+</div>
+</section>
+<!-- Artisan Stories Section (Animation Integration) -->
+<section class="relative py-stack-xl overflow-hidden bg-primary text-on-primary">
+
+<div class="relative z-10 px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto text-center">
+<h2 class="font-label-lg text-label-lg text-secondary-fixed mb-6">ARTISAN STORIES</h2>
+<h3 class="font-display-lg text-display-lg mb-12">The Hands Behind the Gold</h3>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-12 text-left">
+<div class="p-8 border border-on-primary/10 backdrop-blur-sm bg-primary/20">
+<p class="font-headline-md text-headline-md mb-4 text-secondary-fixed">01.</p>
+<h4 class="font-label-lg text-label-lg mb-4 uppercase">The Sourcing</h4>
+<p class="font-body-md text-body-md opacity-80">We only use 100% natural mulberry silk from Cambodian silk farms, ensuring a textile that is as ethical as it is beautiful.</p>
+</div>
+<div class="p-8 border border-on-primary/10 backdrop-blur-sm bg-primary/20">
+<p class="font-headline-md text-headline-md mb-4 text-secondary-fixed">02.</p>
+<h4 class="font-label-lg text-label-lg mb-4 uppercase">The Dyeing</h4>
+<p class="font-body-md text-body-md opacity-80">Our master dyers use ancient natural pigments—indigo, ebony bark, and lac insects—to achieve deep, organic colors.</p>
+</div>
+<div class="p-8 border border-on-primary/10 backdrop-blur-sm bg-primary/20">
+<p class="font-headline-md text-headline-md mb-4 text-secondary-fixed">03.</p>
+<h4 class="font-label-lg text-label-lg mb-4 uppercase">The Finish</h4>
+<p class="font-body-md text-body-md opacity-80">Each garment is hand-finished in our Phnom Penh atelier with meticulous attention to tailoring and structural integrity.</p>
+</div>
+</div>
+<div class="mt-16">
+<button class="px-12 py-5 border border-on-primary hover:bg-on-primary hover:text-primary transition-all font-label-lg text-label-lg">
+                        MEET OUR CRAFTSMEN
+                    </button>
+</div>
+</div>
+</section>
+<!-- Newsletter Subscription -->
+<section class="py-stack-lg px-margin-mobile md:px-margin-desktop bg-surface text-center">
+<div class="max-w-xl mx-auto">
+<h2 class="font-headline-lg text-headline-lg text-primary mb-4">Join the Atelier</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mb-8">Receive private invitations to our new collections and exclusive heritage insights.</p>
+<form class="flex flex-col md:flex-row gap-4">
+<input class="flex-grow border-0 border-b border-primary bg-transparent py-4 px-0 focus:ring-0 focus:border-secondary transition-all placeholder:text-on-surface-variant/50" placeholder="Your Email Address" type="email"/>
+<button class="bg-primary text-on-primary px-8 py-4 font-label-lg text-label-lg hover:bg-secondary transition-colors" type="submit">SUBSCRIBE</button>
+</form>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-tertiary dark:bg-tertiary-container w-full py-stack-xl border-t border-secondary/20">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-gutter px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto text-on-tertiary dark:text-on-tertiary-container">
+<div class="md:col-span-1">
+<div class="font-headline-md text-headline-md text-secondary-fixed mb-6 uppercase tracking-widest">KHMER ATELIER</div>
+<p class="font-body-md text-body-md opacity-70 mb-8 max-w-xs">Preserving Heritage Through Every Thread. Authenticity is our only standard.</p>
+<div class="flex space-x-4 opacity-70">
+<span class="material-symbols-outlined hover:text-secondary-fixed transition-colors cursor-pointer" data-icon="facebook">face_nod</span>
+<span class="material-symbols-outlined hover:text-secondary-fixed transition-colors cursor-pointer" data-icon="photo_camera">photo_camera</span>
+</div>
+</div>
+<div class="flex flex-col space-y-4">
+<span class="font-label-lg text-label-lg text-secondary-fixed mb-2">Explore</span>
+<a class="font-label-sm text-label-sm text-on-tertiary/70 hover:text-on-tertiary transition-colors" href="#">The Silk Process</a>
+<a class="font-label-sm text-label-sm text-on-tertiary/70 hover:text-on-tertiary transition-colors" href="#">Artisan Stories</a>
+<a class="font-label-sm text-label-sm text-on-tertiary/70 hover:text-on-tertiary transition-colors" href="#">Sustainability</a>
+</div>
+<div class="flex flex-col space-y-4">
+<span class="font-label-lg text-label-lg text-secondary-fixed mb-2">Service</span>
+<a class="font-label-sm text-label-sm text-on-tertiary/70 hover:text-on-tertiary transition-colors" href="#">Shipping &amp; Returns</a>
+<a class="font-label-sm text-label-sm text-on-tertiary/70 hover:text-on-tertiary transition-colors" href="#">Contact Us</a>
+<a class="font-label-sm text-label-sm text-on-tertiary/70 hover:text-on-tertiary transition-colors" href="#">Bespoke Orders</a>
+</div>
+<div class="flex flex-col space-y-4">
+<span class="font-label-lg text-label-lg text-secondary-fixed mb-2">Atelier</span>
+<p class="font-body-md text-body-md opacity-70">Street 240, Daun Penh,<br/>Phnom Penh, Cambodia</p>
+<p class="font-body-md text-body-md opacity-70">+855 23 456 789</p>
+</div>
+</div>
+<div class="mt-20 border-t border-white/5 pt-8 text-center px-margin-mobile">
+<p class="font-label-sm text-label-sm opacity-50">© 2024 Khmer Atelier. Preserving Heritage Through Every Thread.</p>
+</div>
+</footer>
+<!-- SideNavBar Mobile -->
+<div class="h-full w-80 fixed right-0 top-0 z-[60] bg-surface translate-x-full transition-transform duration-500 shadow-xl flex flex-col p-6" id="sideNav">
+<div class="flex justify-between items-center mb-12">
+<div class="font-headline-md text-headline-md text-primary">Collections</div>
+<button class="text-on-surface" id="closeNav">
+<span class="material-symbols-outlined" data-icon="close">close</span>
+</button>
+</div>
+<div class="flex flex-col space-y-6">
+<a class="flex items-center space-x-4 p-3 hover:bg-primary-fixed-dim/10 transition-colors group" href="#">
+<span class="material-symbols-outlined text-primary" data-icon="auto_awesome">auto_awesome</span>
+<span class="font-label-lg text-label-lg">New Arrivals</span>
+</a>
+<a class="flex items-center space-x-4 p-3 hover:bg-primary-fixed-dim/10 transition-colors" href="#">
+<span class="material-symbols-outlined" data-icon="female">female</span>
+<span class="font-label-lg text-label-lg">Women's Sampot</span>
+</a>
+<a class="flex items-center space-x-4 p-3 hover:bg-primary-fixed-dim/10 transition-colors" href="#">
+<span class="material-symbols-outlined" data-icon="male">male</span>
+<span class="font-label-lg text-label-lg">Men's Sarongs</span>
+</a>
+<a class="flex items-center space-x-4 p-3 hover:bg-primary-fixed-dim/10 transition-colors" href="#">
+<span class="material-symbols-outlined" data-icon="styler">styler</span>
+<span class="font-label-lg text-label-lg">Formal Suits</span>
+</a>
+<a class="flex items-center space-x-4 p-3 hover:bg-primary-fixed-dim/10 transition-colors" href="#">
+<span class="material-symbols-outlined" data-icon="diamond">diamond</span>
+<span class="font-label-lg text-label-lg">Accessories</span>
+</a>
+</div>
+<div class="mt-auto">
+<button class="w-full bg-primary text-white py-4 font-label-lg text-label-lg uppercase tracking-widest">Book an Appointment</button>
+</div>
+</div>
+<script>
+        const menuToggle = document.getElementById('menu-toggle');
+        const closeNav = document.getElementById('close-nav');
+        const sideNav = document.getElementById('side-nav');
+
+        menuToggle.addEventListener('click', () => {
+            sideNav.classList.remove('translate-x-full');
+        });
+
+        closeNav.addEventListener('click', () => {
+            sideNav.classList.add('translate-x-full');
+        });
+
+        // Intersection Observer for scroll animations
+        const observerOptions = {
+            threshold: 0.1
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('opacity-100', 'translate-y-0');
+                    entry.target.classList.remove('opacity-0', 'translate-y-10');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('section > div').forEach(div => {
+            div.classList.add('transition-all', 'duration-1000', 'opacity-0', 'translate-y-10');
+            observer.observe(div);
+        });
+    </script>
+<script>
+  const cartCount = Number(localStorage.getItem('cartCount') || '0');
+  const cartBadge = document.getElementById('cart-badge');
+  const cartButton = document.getElementById('cart-button');
+  if (cartBadge) {
+    if (cartCount > 0) {
+      cartBadge.textContent = cartCount;
+      cartBadge.classList.remove('hidden');
+    } else {
+      cartBadge.classList.add('hidden');
+    }
+  }
+  if (cartButton) {
+    cartButton.addEventListener('click', () => {
+      localStorage.setItem('cartCount', '0');
+      if (cartBadge) {
+        cartBadge.textContent = '0';
+        cartBadge.classList.add('hidden');
+      }
+    });
+  }
+</script>
+</body></html>

@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>About Us | Khmer Atelier</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Text:wght@400;700&amp;family=Manrope:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind Configuration -->
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-surface": "#1b1c19",
+                    "on-error-container": "#93000a",
+                    "tertiary": "#282727",
+                    "tertiary-fixed-dim": "#c8c6c5",
+                    "tertiary-container": "#3e3d3d",
+                    "primary-container": "#800020",
+                    "on-tertiary-container": "#aaa8a7",
+                    "secondary-container": "#fed65b",
+                    "surface-container-high": "#eae8e3",
+                    "on-secondary-fixed": "#241a00",
+                    "on-tertiary": "#ffffff",
+                    "on-primary-container": "#ff828a",
+                    "on-primary": "#ffffff",
+                    "surface-container": "#f0eee9",
+                    "tertiary-fixed": "#e5e2e1",
+                    "primary-fixed": "#ffdada",
+                    "secondary": "#735c00",
+                    "primary-fixed-dim": "#ffb3b5",
+                    "on-secondary": "#ffffff",
+                    "outline": "#8c7071",
+                    "on-background": "#1b1c19",
+                    "surface": "#fbf9f4",
+                    "outline-variant": "#e0bfbf",
+                    "on-secondary-container": "#745c00",
+                    "on-primary-fixed-variant": "#8e0f28",
+                    "on-secondary-fixed-variant": "#574500",
+                    "on-error": "#ffffff",
+                    "background": "#fbf9f4",
+                    "surface-tint": "#af2b3e",
+                    "surface-dim": "#dbdad5",
+                    "inverse-primary": "#ffb3b5",
+                    "error-container": "#ffdad6",
+                    "error": "#ba1a1a",
+                    "surface-bright": "#fbf9f4",
+                    "secondary-fixed-dim": "#e9c349",
+                    "primary": "#570013",
+                    "inverse-on-surface": "#f2f1ec",
+                    "on-primary-fixed": "#40000b",
+                    "inverse-surface": "#30312e",
+                    "surface-variant": "#e4e2dd",
+                    "surface-container-highest": "#e4e2dd",
+                    "on-tertiary-fixed": "#1c1b1b",
+                    "on-surface-variant": "#584141",
+                    "on-tertiary-fixed-variant": "#474746",
+                    "surface-container-low": "#f5f3ee",
+                    "surface-container-lowest": "#ffffff",
+                    "secondary-fixed": "#ffe088"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "margin-tablet": "2.5rem",
+                    "margin-mobile": "1.25rem",
+                    "container-max": "1440px",
+                    "stack-md": "2rem",
+                    "stack-lg": "4rem",
+                    "margin-desktop": "5rem",
+                    "gutter": "2rem",
+                    "stack-xl": "8rem"
+            },
+            "fontFamily": {
+                    "label-sm": ["Manrope"],
+                    "headline-lg-mobile": ["Libre Caslon Text"],
+                    "display-lg": ["Libre Caslon Text"],
+                    "body-md": ["Manrope"],
+                    "headline-md": ["Libre Caslon Text"],
+                    "body-lg": ["Manrope"],
+                    "label-lg": ["Manrope"],
+                    "headline-lg": ["Libre Caslon Text"]
+            },
+            "fontSize": {
+                    "label-sm": ["12px", {"lineHeight": "16px", "letterSpacing": "0.05em", "fontWeight": "500"}],
+                    "headline-lg-mobile": ["32px", {"lineHeight": "40px", "fontWeight": "400"}],
+                    "display-lg": ["64px", {"lineHeight": "72px", "letterSpacing": "-0.02em", "fontWeight": "400"}],
+                    "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                    "headline-md": ["28px", {"lineHeight": "36px", "fontWeight": "400"}],
+                    "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+                    "label-lg": ["14px", {"lineHeight": "20px", "letterSpacing": "0.1em", "fontWeight": "600"}],
+                    "headline-lg": ["40px", {"lineHeight": "48px", "fontWeight": "400"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+        }
+        .hero-gradient {
+            background: linear-gradient(to bottom, rgba(27, 28, 25, 0.4) 0%, rgba(27, 28, 25, 0.8) 100%);
+        }
+        .gold-underline {
+            position: relative;
+        }
+        .gold-underline::after {
+            content: '';
+            position: absolute;
+            bottom: -4px;
+            left: 0;
+            width: 40px;
+            height: 2px;
+            background-color: #ffe088;
+        }
+    </style>
+</head>
+<body class="bg-surface text-on-surface font-body-md overflow-x-hidden">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-surface/80 dark:bg-surface-container/80 backdrop-blur-md border-b border-outline-variant/30">
+<div class="flex justify-between items-center px-margin-mobile md:px-margin-desktop h-20 w-full max-w-container-max mx-auto">
+<!-- Brand Logo -->
+<a class="font-headline-md text-headline-md tracking-widest text-primary dark:text-inverse-primary" href="index.html">
+                KHMER Collection
+            </a>
+<!-- Navigation Links -->
+<div class="hidden md:flex items-center gap-8">
+<a class="font-label-lg text-label-lg text-on-surface-variant hover:text-primary transition-colors" href="#">Home</a>
+<a class="font-label-lg text-label-lg text-on-surface-variant hover:text-primary transition-colors" href="#">Collection</a>
+<a class="font-label-lg text-label-lg text-primary dark:text-inverse-primary border-b-2 border-secondary-fixed pb-1" href="#">About</a>
+
+</div>
+<!-- Action Icons -->
+<div class="flex items-center gap-6">
+<button class="material-symbols-outlined text-primary hover:text-secondary-fixed transition-all duration-300 scale-95 duration-200 ease-in-out" data-icon="favorite">favorite</button>
+<button id="cart-button" class="material-symbols-outlined text-primary hover:text-secondary-fixed transition-all duration-300 scale-95 duration-200 ease-in-out relative" data-icon="shopping_bag" aria-label="View cart">shopping_bag
+<span id="cart-badge" class="hidden absolute -top-1 -right-1 bg-primary text-white text-[10px] w-4 h-4 rounded-full flex items-center justify-center font-bold">0</span>
+</button>
+<button class="md:hidden material-symbols-outlined text-primary" data-icon="menu" id="menu-toggle">menu</button>
+</div>
+</div>
+</nav>
+<main>
+<!-- 1. Cinematic Hero Section -->
+<section class="relative h-screen flex items-center justify-center overflow-hidden">
+<div class="absolute inset-0 z-0">
+<div class="w-full h-full bg-cover bg-center scale-105" data-alt="A cinematic, high-fashion photograph of a Khmer weaver working in a sun-drenched studio. The sunlight catches the golden silk threads on a traditional wooden loom, creating a warm, ethereal glow. The color palette is dominated by deep maroon and radiant gold, reflecting a luxury heritage aesthetic. The composition is wide and editorial, focusing on the intricate craftsmanship and serene environment." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDs3y1EkFAL_a1Vvt-hmISNIOpFzEvF4_t7YsLVD0oRXUMkKOo_jzuSnKRiApSWBsbnKip5EcHCUEnNjv95_FrHEJ1RkR1cpEoF8pejwDmcuk0fnDGfdXEJPpLv89h-X4NpAGJIjP0t0le84PjYCfaGpUS7gMq8wgeQEi6w32JA3VGGfByytMU4WJ805zP6Ozfh7lN-jC5u5kBbP-qSTcabbqRPSzqLztSRYJyItWDE2VJU7og4eHXchgm2wpjQyYMIIn4Q_TjPUg')"></div>
+<div class="absolute inset-0 hero-gradient"></div>
+</div>
+<div class="relative z-10 text-center max-w-4xl px-margin-mobile md:px-0">
+<span class="font-label-lg text-label-lg text-secondary-fixed tracking-[0.3em] uppercase block mb-6">Established 1994</span>
+<h1 class="font-display-lg text-display-lg text-white mb-8">The Soul of Khmer Silk</h1>
+<p class="font-body-lg text-body-lg text-white/90 max-w-2xl mx-auto leading-relaxed">
+                    A mission born from reverence. We preserve the ancient heartbeat of Cambodian craftsmanship, weaving together a thousand years of heritage with the refined demands of modern luxury.
+                </p>
+<div class="mt-12">
+<button class="bg-primary text-white px-10 py-4 font-label-lg text-label-lg uppercase border-b-2 border-secondary hover:bg-primary-container transition-all">Explore the Legacy</button>
+</div>
+</div>
+<div class="absolute bottom-10 left-1/2 -translate-x-1/2 animate-bounce">
+<span class="material-symbols-outlined text-white text-4xl">keyboard_double_arrow_down</span>
+</div>
+</section>
+<!-- 2. Our Story Section -->
+<section class="py-stack-xl px-margin-mobile md:px-margin-desktop bg-surface">
+<div class="max-w-container-max mx-auto">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-20 items-center">
+<div class="relative">
+<div class="aspect-[4/5] bg-cover bg-center" data-alt="An artistic black and white photograph with gold accents depicting the ruins of Angkor Wat partially covered by jungle vines. The image transitions into a vibrant, high-definition shot of a modern atelier, symbolizing the revival of tradition. The lighting is dramatic and moody, emphasizing the passage of time and the resilience of Khmer culture through its textiles." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuB7ibhsOJG4-f5P5Aj4PHeGpInnpLy73mgr_9ydhc7ih2q5rod37Wd0U026FYgY6Avd1ntqTkUaqcv8rpEM7JlflNBf8oUXDVYTx_l0wEsjp4NYQuGYri26_DAi53gIHqCKyLAn4N-fecXzJsT3ordl1ZM7uEbwrWhYdcmu1Ngfp2S2I9P-uK2KMNzeyBZ_uzeHVLS6qsAjnRSSfoXH1tWZssqZr5HFU7bQyDpZUf98JsTb7YhqwxuynhdKgxZHXoXITZw6HeaL7A')"></div>
+<div class="absolute -bottom-10 -right-10 w-64 h-80 hidden md:block bg-surface-container-high p-8 border border-outline-variant/30">
+<p class="font-label-sm text-label-sm text-primary mb-4 italic">"To weave is to remember."</p>
+<p class="font-body-md text-body-md text-on-surface-variant">Tracing the lineage of our silk from the Royal Courts to the modern world.</p>
+</div>
+</div>
+<div class="space-y-8">
+<h2 class="font-headline-lg text-headline-lg gold-underline inline-block">Our Story</h2>
+<p class="font-headline-md text-headline-md text-primary leading-tight">From the Golden Age of Angkor to a Modern Revival.</p>
+<p class="font-body-lg text-body-lg text-on-surface-variant leading-relaxed">
+                            For centuries, Cambodian silk was the fabric of divinity, adorning the walls of Angkor and the bodies of kings. Khmer Atelier was founded to ensure this golden thread was never broken. Following years of silence, we sought out the last remaining master weavers in remote provinces, reclaiming techniques that were nearly lost to history.
+                        </p>
+<p class="font-body-lg text-body-lg text-on-surface-variant leading-relaxed">
+                            Today, we stand as a bridge. We honor the meticulous, slow-fashion approach of our ancestors while embracing the contemporary silhouettes of today's global elite. Every garment is a living archive, a narrative of resilience, and a celebration of Cambodian identity.
+                        </p>
+</div>
+</div>
+</div>
+</section>
+<!-- 3. The Master's Vision -->
+<section class="bg-tertiary py-stack-xl px-margin-mobile md:px-margin-desktop text-on-tertiary overflow-hidden relative">
+<div class="absolute top-0 right-0 opacity-10 pointer-events-none">
+<span class="material-symbols-outlined text-[40rem]">styler</span>
+</div>
+<div class="max-w-3xl mx-auto text-center relative z-10">
+<span class="material-symbols-outlined text-secondary-fixed text-6xl mb-8" style="font-variation-settings: 'FILL' 1;">format_quote</span>
+<blockquote class="font-display-lg text-headline-lg italic leading-tight mb-12">
+                    "True luxury is not found in speed, but in the patience of the hand. When a weaver throws the shuttle, she is not just creating fabric; she is breathing life into a thousand years of whispered secrets."
+                </blockquote>
+<div class="flex flex-col items-center">
+<div class="w-20 h-20 rounded-full bg-cover bg-center mb-4 border-2 border-secondary-fixed" data-alt="A portrait of a distinguished elderly Cambodian woman, a Master Weaver, with a serene expression and silver hair. She is wearing a traditional silk sampot in deep maroon and gold. The background is a soft-focus workshop. Her hands, calloused from years of work, are visible, conveying wisdom and skill. The portrait is high-contrast and elegant." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBYYtsSfdLdHq8xv1k7sl2YhUp8_vT6YRPMcJUmpLwRmiOYeV-Anoier0s8F7_eMybH9xA-Q-SfOfcvj_cKCWUQH88zNzNJ4AbSAhR6k1QWj3WoD_tbNBWcE72Qx8_T2LxKHP44oY8wTakLE6tabDEktlvhTLGNIkz9I8AJUjJ2N4A5T6jZtAhot3K-I4_FEfYPOZJ0dE2fOWlGA-YekqjcDROEHlLifgBgYJll3L64sbuDOOz3eVkvKmlz52yEfyU-HC57ZE58Yw')"></div>
+<cite class="not-italic">
+<span class="block font-label-lg text-label-lg text-secondary-fixed uppercase tracking-widest">Neak Srey Sophea</span>
+<span class="block font-label-sm text-label-sm text-on-tertiary-container mt-1">Master Weaver &amp; Creative Director</span>
+</cite>
+</div>
+</div>
+</section>
+<!-- 4. Our Philosophy -->
+<section class="py-stack-xl px-margin-mobile md:px-margin-desktop bg-surface">
+<div class="max-w-container-max mx-auto">
+<div class="text-center mb-20">
+<h2 class="font-headline-lg text-headline-lg mb-4">Our Philosophy</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant">The pillars that define our commitment to excellence.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+<!-- Pillar 1 -->
+<div class="group p-10 border border-outline-variant/30 hover:bg-primary transition-all duration-500">
+<span class="material-symbols-outlined text-primary group-hover:text-secondary-fixed text-5xl mb-6 transition-colors">diamond</span>
+<h3 class="font-headline-md text-headline-md mb-4 group-hover:text-white transition-colors">Artisan Empowerment</h3>
+<p class="font-body-md text-body-md text-on-surface-variant group-hover:text-white/80 transition-colors">
+                            We provide fair living wages and healthcare to over 120 artisans, ensuring that their mastery is valued as a prestigious profession.
+                        </p>
+</div>
+<!-- Pillar 2 -->
+<div class="group p-10 border border-outline-variant/30 hover:bg-primary transition-all duration-500">
+<span class="material-symbols-outlined text-primary group-hover:text-secondary-fixed text-5xl mb-6 transition-colors">eco</span>
+<h3 class="font-headline-md text-headline-md mb-4 group-hover:text-white transition-colors">Ecological Responsibility</h3>
+<p class="font-body-md text-body-md text-on-surface-variant group-hover:text-white/80 transition-colors">
+                            From organic golden silkworms to natural vegetable dyes like indigo and prohut bark, our process honors the earth.
+                        </p>
+</div>
+<!-- Pillar 3 -->
+<div class="group p-10 border border-outline-variant/30 hover:bg-primary transition-all duration-500">
+<span class="material-symbols-outlined text-primary group-hover:text-secondary-fixed text-5xl mb-6 transition-colors">history_edu</span>
+<h3 class="font-headline-md text-headline-md mb-4 group-hover:text-white transition-colors">Heritage Preservation</h3>
+<p class="font-body-md text-body-md text-on-surface-variant group-hover:text-white/80 transition-colors">
+                            We archive ancient patterns and document oral weaving traditions to pass them on to the next generation of Khmer creators.
+                        </p>
+</div>
+</div>
+</div>
+</section>
+<!-- 5. The Atelier Process -->
+<section class="py-stack-xl bg-surface-container">
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
+<div class="mb-16 flex flex-col md:flex-row justify-between items-end gap-6">
+<div>
+<h2 class="font-headline-lg text-headline-lg mb-4">The Atelier Process</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant">A slow-crafted journey from nature to haute couture.</p>
+</div>
+<span class="font-label-lg text-label-lg text-primary tracking-widest uppercase">Precision in every thread</span>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-4 gap-4">
+<!-- Step 1 -->
+<div class="relative overflow-hidden group aspect-[3/4]">
+<div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-110" data-alt="A macro photograph of golden silk cocoons in a rustic wooden basket. The lighting is soft and warm, highlighting the natural yellow hue of the Cambodian golden silk. The image has a high-end luxury feel, emphasizing organic sourcing and natural beauty. The aesthetic is minimalist and editorial." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCrl7TimblQ-GNVOxjnNGD8v2RiaA--7P3glJMz6lA7ICZo34XOEjfcAGiKH_H0-h0t7dyFuEi6yIoTrgaIMYcL3SJc1WUJwDzTPgVaz7hDl7EaHe8H1eYUfDDUP3RI7zYKiDus1ZHQhUslWDXWeafHXng3OhWmqghxvRZWF9yywwl-wY4lQXDuMR1tdCCyT5v47mErJC_QXllrtaKZbjmq7-Dy_VxaShqQKQKBp_qYGnLuOSa9Vmhlt2-OzgXwns4bNi-LL4x7iw')"></div>
+<div class="absolute inset-0 bg-black/40 group-hover:bg-black/20 transition-all"></div>
+<div class="absolute bottom-0 left-0 p-8 text-white">
+<span class="font-label-sm text-label-sm mb-2 block text-secondary-fixed">01. Sourcing</span>
+<h4 class="font-headline-md text-headline-md">Golden Silkworms</h4>
+</div>
+</div>
+<!-- Step 2 -->
+<div class="relative overflow-hidden group aspect-[3/4]">
+<div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-110" data-alt="A close-up of a large ceramic vat filled with deep blue indigo dye. Silk yarns are being submerged into the liquid by hands covered in natural dye. Steam rises from the vat in a sunlit outdoor courtyard. The shot is high-contrast, focusing on the texture of the liquid and the rich color of the dye. Luxury artisan aesthetic." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDe-gD6O2yzWSQMSLDulmfEUbYFXTIr4duudKppizhWQKMOS_c4AGO0B55yiBIGOoPkez8uwBSwSXWO9pEl0FhXfRoP755hQFnhFOTSs-9gTs2iFWjtGG0NDeuCHEj83cyb419RSbjZ9ZTNz0ZJQLGnIFkyN7I1TWykJr_UG1DqvxvN7gWhq7Hg70sTPfynh5VJ5AAQVDM2cnhjzp6rHHWLvivYR7Bs18xHINkxgGctiacdSy5EMVP0Ft-bGvWeh0frjLAAv7_rRg')"></div>
+<div class="absolute inset-0 bg-black/40 group-hover:bg-black/20 transition-all"></div>
+<div class="absolute bottom-0 left-0 p-8 text-white">
+<span class="font-label-sm text-label-sm mb-2 block text-secondary-fixed">02. Dyeing</span>
+<h4 class="font-headline-md text-headline-md">Natural Pigments</h4>
+</div>
+</div>
+<!-- Step 3 -->
+<div class="relative overflow-hidden group aspect-[3/4]">
+<div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-110" data-alt="A detailed, shallow depth-of-field shot of a traditional wooden loom in action. Intricate silk patterns in gold and maroon are being woven. The focus is on the tight intersection of threads. The lighting is focused and dramatic, highlighting the complexity and precision of the weave. The style is sophisticated and elegant." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBuadgm8SxLnhd5x1LwPdEVE9WtzhdWCjunaKZZX1gsDIF4Z58d772u6XgoOZPG3bCel_mKYGvr3EY0q2kYu8SYAStwjzmMQ0xpjscgY_3IHBXJactPIUtyb7BWWZGaWoE0n9lbQe98W7QR2PTSE8-rhWn12UXsLBPSwYlmfRtf3ipezzY6wpX8mjFO9ILesBxFdIXdW0qk4FrHZ6zh8BRAYl4RPblUvq7ICbUZm_-EQrAzAxZVEZ8KSFhTHCggDfjYINnFj0PAWQ')"></div>
+<div class="absolute inset-0 bg-black/40 group-hover:bg-black/20 transition-all"></div>
+<div class="absolute bottom-0 left-0 p-8 text-white">
+<span class="font-label-sm text-label-sm mb-2 block text-secondary-fixed">03. Weaving</span>
+<h4 class="font-headline-md text-headline-md">Ancient Hand-looms</h4>
+</div>
+</div>
+<!-- Step 4 -->
+<div class="relative overflow-hidden group aspect-[3/4]">
+<div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-110" data-alt="A modern atelier setting where a tailor is working on a bespoke silk garment draped over a mannequin. The garment features traditional Khmer motifs with a modern cut. Measuring tapes and tailoring chalk are visible. The lighting is professional studio lighting, bright and crisp. High-fashion couture aesthetic." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDRE3RftGj7Iq7vhDtGdj72n7dYBiVESaNJ2SQGOYK6HOdWIPlA3xa2QaGczJEq5rRgPcJUm5vR8fW2t0KKE0DvKOXHFwvzgjmiBBOwA6vJ0lrnwWh3gFI0z5eLeb5RTDFWI89mGzMgMaEIZ1WT3o7TuSguI3F54RIRirIl8iCGIBbpVPFGka6SGMAHmN61aug1dboSohNG8I-vZSG8nK-Ejft28iyDjhL9gLnRTIFF3ppf4GZznjUp3Mbus1SqEfcYBf_f4jNiNQ')"></div>
+<div class="absolute inset-0 bg-black/40 group-hover:bg-black/20 transition-all"></div>
+<div class="absolute bottom-0 left-0 p-8 text-white">
+<span class="font-label-sm text-label-sm mb-2 block text-secondary-fixed">04. Tailoring</span>
+<h4 class="font-headline-md text-headline-md">Bespoke Fitting</h4>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 6. Impact at a Glance -->
+<section class="py-stack-lg bg-surface border-y border-outline-variant/30">
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-12 text-center">
+<div class="space-y-2">
+<p class="font-display-lg text-primary text-6xl font-bold">120+</p>
+<p class="font-label-lg text-label-lg uppercase tracking-[0.2em] text-on-surface-variant">Master Artisans</p>
+</div>
+<div class="space-y-2">
+<p class="font-display-lg text-primary text-6xl font-bold">5</p>
+<p class="font-label-lg text-label-lg uppercase tracking-[0.2em] text-on-surface-variant">Provincial Collectives</p>
+</div>
+<div class="space-y-2">
+<p class="font-display-lg text-primary text-6xl font-bold">1,000+</p>
+<p class="font-label-lg text-label-lg uppercase tracking-[0.2em] text-on-surface-variant">Years of Tradition</p>
+</div>
+</div>
+</div>
+</section>
+<!-- 7. Visit the Atelier CTA -->
+<section class="py-stack-xl px-margin-mobile md:px-margin-desktop">
+<div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-16">
+<div class="flex-1 space-y-8">
+<h2 class="font-headline-lg text-headline-lg">Experience the Artistry</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant">
+                        We invite you to our flagship atelier in Phnom Penh for a private viewing of our latest collections and a tour of our weaving center. Witness the transformation of silk firsthand.
+                    </p>
+<div class="space-y-4">
+<div class="flex items-center space-x-4">
+<span class="material-symbols-outlined text-primary">location_on</span>
+<span class="font-body-md text-body-md">Sothearos Blvd, Phnom Penh, Cambodia</span>
+</div>
+<div class="flex items-center space-x-4">
+<span class="material-symbols-outlined text-primary">calendar_month</span>
+<span class="font-body-md text-body-md">By Appointment Only: Tue – Sat, 10am – 6pm</span>
+</div>
+</div>
+<button class="bg-primary text-white px-12 py-5 font-label-lg text-label-lg uppercase tracking-widest hover:bg-primary-container transition-all">Book a Consultation</button>
+</div>
+<div class="flex-1 w-full">
+<div class="aspect-square relative grayscale hover:grayscale-0 transition-all duration-1000 cursor-pointer">
+<div class="absolute inset-0 bg-primary/10 mix-blend-multiply"></div>
+<div class="w-full h-full bg-cover bg-center" data-alt="An architectural photograph of a luxury boutique entrance. Large wooden doors with brass handles are flanked by lush tropical greenery. A subtle brass sign reads 'Khmer Atelier'. The lighting is late afternoon golden hour, creating long shadows and a prestigious, welcoming atmosphere. The setting is exclusive and high-end." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuA08EyJpIXzssRRJlG2TcLVJOZeV1y_DCirUymEJJPy5W3r34JPB5cNTHqQmCM8hqdKx7kvtnsBchgYGQqE6OZDkvb76oAeF1Vh06j9Z_wQkyg46I1EfQNmqqui1EEsM5X-RycBfK_CSEiD4pSZy1OsR8klRJyTZg7i7E4yVztuwS8p01ig2pYRvt8Ox2nN0lGbVNo-kHCqJiFjikgVF02clzeUXIc1M7-XZuoC2wgP2GmofYzOWshlVlDZuz4EQJyQXscF0hZw_Q')"></div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-tertiary dark:bg-tertiary-container w-full py-stack-xl border-t border-secondary/20">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-gutter px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto text-on-tertiary dark:text-on-tertiary-container">
+<div class="md:col-span-1">
+<div class="font-headline-md text-headline-md text-secondary-fixed mb-6 uppercase tracking-widest">KHMER ATELIER</div>
+<p class="font-body-md text-body-md opacity-70 mb-8 max-w-xs">Preserving Heritage Through Every Thread. Authenticity is our only standard.</p>
+<div class="flex space-x-4 opacity-70">
+<span class="material-symbols-outlined hover:text-secondary-fixed transition-colors cursor-pointer" data-icon="facebook">face_nod</span>
+<span class="material-symbols-outlined hover:text-secondary-fixed transition-colors cursor-pointer" data-icon="photo_camera">photo_camera</span>
+</div>
+</div>
+<div class="flex flex-col space-y-4">
+<span class="font-label-lg text-label-lg text-secondary-fixed mb-2">Explore</span>
+<a class="font-label-sm text-label-sm text-on-tertiary/70 hover:text-on-tertiary transition-colors" href="#">The Silk Process</a>
+<a class="font-label-sm text-label-sm text-on-tertiary/70 hover:text-on-tertiary transition-colors" href="#">Artisan Stories</a>
+<a class="font-label-sm text-label-sm text-on-tertiary/70 hover:text-on-tertiary transition-colors" href="#">Sustainability</a>
+</div>
+<div class="flex flex-col space-y-4">
+<span class="font-label-lg text-label-lg text-secondary-fixed mb-2">Service</span>
+<a class="font-label-sm text-label-sm text-on-tertiary/70 hover:text-on-tertiary transition-colors" href="#">Shipping &amp; Returns</a>
+<a class="font-label-sm text-label-sm text-on-tertiary/70 hover:text-on-tertiary transition-colors" href="#">Contact Us</a>
+<a class="font-label-sm text-label-sm text-on-tertiary/70 hover:text-on-tertiary transition-colors" href="#">Bespoke Orders</a>
+</div>
+<div class="flex flex-col space-y-4">
+<span class="font-label-lg text-label-lg text-secondary-fixed mb-2">Atelier</span>
+<p class="font-body-md text-body-md opacity-70">Street 240, Daun Penh,<br/>Phnom Penh, Cambodia</p>
+<p class="font-body-md text-body-md opacity-70">+855 23 456 789</p>
+</div>
+</div>
+<div class="mt-20 border-t border-white/5 pt-8 text-center px-margin-mobile">
+<p class="font-label-sm text-label-sm opacity-50">© 2024 Khmer Atelier. Preserving Heritage Through Every Thread.</p>
+</div>
+</footer>
+<!-- SideNavBar Overlay -->
+<aside class="h-full w-80 fixed right-0 top-0 z-[60] bg-surface shadow-xl translate-x-full transition-transform duration-500 flex flex-col p-6" id="side-nav">
+<div class="flex justify-between items-center mb-8">
+<div>
+<h2 class="font-headline-md text-headline-md text-primary">Collections</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">Exquisite Khmer Craftsmanship</p>
+</div>
+<button class="material-symbols-outlined text-primary" id="close-nav">close</button>
+</div>
+<nav class="flex flex-col gap-2">
+<a class="flex items-center gap-4 p-4 font-label-lg text-label-lg bg-primary-container text-on-primary-container font-bold rounded" href="#">
+<span class="material-symbols-outlined" data-icon="auto_awesome">auto_awesome</span> New Arrivals
+            </a>
+<a class="flex items-center gap-4 p-4 font-label-lg text-label-lg text-on-surface hover:bg-surface-container-low transition-colors rounded" href="#">
+<span class="material-symbols-outlined" data-icon="female">female</span> Women's Sampot
+            </a>
+<a class="flex items-center gap-4 p-4 font-label-lg text-label-lg text-on-surface hover:bg-surface-container-low transition-colors rounded" href="#">
+<span class="material-symbols-outlined" data-icon="male">male</span> Men's Sarongs
+            </a>
+<a class="flex items-center gap-4 p-4 font-label-lg text-label-lg text-on-surface hover:bg-surface-container-low transition-colors rounded" href="#">
+<span class="material-symbols-outlined" data-icon="styler">styler</span> Formal Suits
+            </a>
+<a class="flex items-center gap-4 p-4 font-label-lg text-label-lg text-on-surface hover:bg-surface-container-low transition-colors rounded" href="#">
+<span class="material-symbols-outlined" data-icon="diamond">diamond</span> Accessories
+            </a>
+</nav>
+<div class="mt-auto">
+<button class="w-full py-4 bg-primary text-on-primary font-label-lg text-label-lg uppercase gold-expand">
+                Book an Appointment
+            </button>
+</div>
+</aside>
+<!-- Micro-interactions Script -->
+<script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // Header scroll effect
+            const nav = document.querySelector('nav');
+            window.addEventListener('scroll', () => {
+                if (window.scrollY > 50) {
+                    nav.classList.add('py-2');
+                    nav.classList.remove('h-20');
+                    nav.classList.add('h-16');
+                } else {
+                    nav.classList.remove('py-2');
+                    nav.classList.add('h-20');
+                    nav.classList.remove('h-16');
+                }
+            });
+
+            // Fade-in animations for sections
+            const observerOptions = {
+                threshold: 0.1
+            };
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('opacity-100', 'translate-y-0');
+                        entry.target.classList.remove('opacity-0', 'translate-y-10');
+                    }
+                });
+            }, observerOptions);
+
+            document.querySelectorAll('section').forEach(section => {
+                section.classList.add('transition-all', 'duration-1000', 'ease-out', 'opacity-0', 'translate-y-10');
+                observer.observe(section);
+            });
+
+            // Mobile side-nav toggle (matches Collection.html behavior)
+            const menuToggle = document.getElementById('menu-toggle');
+            const closeNav = document.getElementById('close-nav');
+            const sideNav = document.getElementById('side-nav');
+
+            if (menuToggle && sideNav) {
+                menuToggle.addEventListener('click', () => {
+                    sideNav.classList.remove('translate-x-full');
+                });
+            }
+            if (closeNav && sideNav) {
+                closeNav.addEventListener('click', () => {
+                    sideNav.classList.add('translate-x-full');
+                });
+            }
+        });
+    </script>
+<script>
+  const cartCount = Number(localStorage.getItem('cartCount') || '0');
+  const cartBadge = document.getElementById('cart-badge');
+  const cartButton = document.getElementById('cart-button');
+  if (cartBadge) {
+    if (cartCount > 0) {
+      cartBadge.textContent = cartCount;
+      cartBadge.classList.remove('hidden');
+    } else {
+      cartBadge.classList.add('hidden');
+    }
+  }
+  if (cartButton) {
+    cartButton.addEventListener('click', () => {
+      localStorage.setItem('cartCount', '0');
+      if (cartBadge) {
+        cartBadge.textContent = '0';
+        cartBadge.classList.add('hidden');
+      }
+    });
+  }
+</script>
+</body></html>
