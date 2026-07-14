@@ -138,7 +138,16 @@
             </a>
 <div class="hidden md:flex gap-10 items-center">
 <a class="font-label-lg text-label-lg text-on-surface-variant hover:text-secondary-fixed transition-all duration-300" href="#">Home</a>
-<a class="font-label-lg text-label-lg text-on-surface-variant hover:text-secondary-fixed transition-all duration-300" href="#">Collection</a>
+<div class="relative">
+<button id="collection-toggle" class="font-label-lg text-label-lg text-on-surface-variant hover:text-secondary-fixed transition-all duration-300 flex items-center gap-2" type="button" aria-expanded="false" aria-controls="collection-menu">
+Collection
+<span class="material-symbols-outlined text-sm">expand_more</span>
+</button>
+<div id="collection-menu" class="absolute left-0 top-full mt-3 hidden min-w-[180px] rounded-xl border border-outline-variant/40 bg-surface shadow-xl p-2">
+<a class="block rounded-lg px-3 py-2 text-sm font-medium text-on-surface hover:bg-surface-container-low hover:text-primary transition-colors" href="Collection.html">Women</a>
+<a class="block rounded-lg px-3 py-2 text-sm font-medium text-on-surface hover:bg-surface-container-low hover:text-primary transition-colors" href="Collection_Man.html">Men</a>
+</div>
+</div>
 <a class="font-label-lg text-label-lg text-on-surface-variant hover:text-secondary-fixed transition-all duration-300" href="#">About</a>
 </div>
 <div class="flex items-center gap-6">
@@ -323,4 +332,31 @@
             }, 100);
         });
     </script>
+<script>
+  const collectionToggle = document.getElementById('collection-toggle');
+  const collectionMenu = document.getElementById('collection-menu');
+
+  if (collectionToggle && collectionMenu) {
+    collectionToggle.addEventListener('click', (event) => {
+      event.stopPropagation();
+      const isHidden = collectionMenu.classList.contains('hidden');
+      collectionMenu.classList.toggle('hidden');
+      collectionToggle.setAttribute('aria-expanded', String(isHidden));
+    });
+
+    collectionMenu.querySelectorAll('a').forEach((link) => {
+      link.addEventListener('click', () => {
+        collectionMenu.classList.add('hidden');
+        collectionToggle.setAttribute('aria-expanded', 'false');
+      });
+    });
+
+    document.addEventListener('click', (event) => {
+      if (!collectionToggle.contains(event.target) && !collectionMenu.contains(event.target)) {
+        collectionMenu.classList.add('hidden');
+        collectionToggle.setAttribute('aria-expanded', 'false');
+      }
+    });
+  }
+</script>
 </body></html>

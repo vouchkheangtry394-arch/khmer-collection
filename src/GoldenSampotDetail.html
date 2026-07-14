@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Royal Golden Sampot | KHMER ATELIER</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&amp;family=Manrope:wght@200..800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "secondary-fixed": "#ffe088",
+                        "secondary": "#735c00",
+                        "on-secondary-fixed-variant": "#574500",
+                        "on-primary-fixed-variant": "#8e0f28",
+                        "surface-variant": "#e4e2dd",
+                        "primary": "#570013",
+                        "tertiary-fixed": "#e5e2e1",
+                        "inverse-surface": "#30312e",
+                        "on-error-container": "#93000a",
+                        "on-error": "#ffffff",
+                        "surface-container-lowest": "#ffffff",
+                        "tertiary-container": "#3e3d3d",
+                        "on-tertiary-fixed-variant": "#474746",
+                        "on-primary-fixed": "#40000b",
+                        "surface-container-high": "#eae8e3",
+                        "tertiary-fixed-dim": "#c8c6c5",
+                        "on-secondary": "#ffffff",
+                        "tertiary": "#282727",
+                        "outline-variant": "#e0bfbf",
+                        "surface-container-highest": "#e4e2dd",
+                        "primary-container": "#800020",
+                        "on-primary-container": "#ff828a",
+                        "surface": "#fbf9f4",
+                        "on-tertiary-container": "#aaa8a7",
+                        "on-primary": "#ffffff",
+                        "surface-bright": "#fbf9f4",
+                        "on-surface-variant": "#584141",
+                        "secondary-fixed-dim": "#e9c349",
+                        "primary-fixed-dim": "#ffb3b5",
+                        "on-tertiary": "#ffffff",
+                        "inverse-primary": "#ffb3b5",
+                        "error": "#ba1a1a",
+                        "primary-fixed": "#ffdada",
+                        "on-tertiary-fixed": "#1c1b1b",
+                        "on-surface": "#1b1c19",
+                        "on-secondary-container": "#745c00",
+                        "inverse-on-surface": "#f2f1ec",
+                        "surface-tint": "#af2b3e",
+                        "error-container": "#ffdad6",
+                        "on-secondary-fixed": "#241a00",
+                        "background": "#fbf9f4",
+                        "on-background": "#1b1c19",
+                        "outline": "#8c7071",
+                        "surface-container": "#f0eee9",
+                        "surface-container-low": "#f5f3ee",
+                        "secondary-container": "#fed65b",
+                        "surface-dim": "#dbdad5"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "margin-mobile": "1.25rem",
+                        "stack-md": "2rem",
+                        "gutter": "2rem",
+                        "stack-xl": "8rem",
+                        "container-max": "1440px",
+                        "margin-tablet": "2.5rem",
+                        "margin-desktop": "5rem",
+                        "stack-lg": "4rem"
+                    },
+                    "fontFamily": {
+                        "headline-lg": ["Libre Caslon Text"],
+                        "body-md": ["Manrope"],
+                        "headline-lg-mobile": ["Libre Caslon Text"],
+                        "headline-md": ["Libre Caslon Text"],
+                        "label-lg": ["Manrope"],
+                        "display-lg": ["Libre Caslon Text"],
+                        "body-lg": ["Manrope"],
+                        "label-sm": ["Manrope"]
+                    },
+                    "fontSize": {
+                        "headline-lg": ["40px", {"lineHeight": "48px", "fontWeight": "400"}],
+                        "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                        "headline-lg-mobile": ["32px", {"lineHeight": "40px", "fontWeight": "400"}],
+                        "headline-md": ["28px", {"lineHeight": "36px", "fontWeight": "400"}],
+                        "label-lg": ["14px", {"lineHeight": "20px", "letterSpacing": "0.1em", "fontWeight": "600"}],
+                        "display-lg": ["64px", {"lineHeight": "72px", "letterSpacing": "-0.02em", "fontWeight": "400"}],
+                        "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+                        "label-sm": ["12px", {"lineHeight": "16px", "letterSpacing": "0.05em", "fontWeight": "500"}]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+            display: inline-block;
+            vertical-align: middle;
+        }
+        .btn-gold-hover:hover {
+            border-bottom-width: 2px;
+            border-color: #735c00;
+        }
+        .custom-scrollbar::-webkit-scrollbar { width: 4px; }
+        .custom-scrollbar::-webkit-scrollbar-thumb { background: #8c7071; }
+        .image-zoom:hover img { transform: scale(1.05); }
+    </style>
+</head>
+<body class="bg-surface text-on-surface font-body-md antialiased selection:bg-secondary-fixed-dim selection:text-primary">
+<!-- Top Navigation -->
+<nav class="fixed top-0 w-full z-50 bg-surface/80 backdrop-blur-md border-b border-outline-variant/30 h-20">
+<div class="flex justify-between items-center px-margin-desktop h-full w-full max-w-container-max mx-auto">
+    <a class="font-headline-md text-headline-md tracking-widest text-primary" href="index.html">KHMER Collection</a>
+<div class="hidden md:flex space-x-12">
+<a class="font-label-lg text-label-lg text-on-surface-variant hover:text-primary transition-colors" href="#">Home</a>
+<a class="font-label-lg text-label-lg text-primary border-b-2 border-secondary-fixed pb-1" href="#">Collection</a>
+<a class="font-label-lg text-label-lg text-on-surface-variant hover:text-primary transition-colors" href="#">About</a>
+</div>
+<div class="flex items-center space-x-6 text-primary">
+<button class="material-symbols-outlined text-2xl" data-icon="favorite">favorite</button>
+<button id="cart-button" class="material-symbols-outlined text-2xl relative" data-icon="shopping_bag" aria-label="View cart">
+                    shopping_bag
+                    <span id="cart-badge" class="hidden absolute -top-1 -right-1 bg-primary text-white text-[10px] w-4 h-4 rounded-full flex items-center justify-center font-bold">0</span>
+</button>
+<button class="material-symbols-outlined text-2xl md:hidden" data-icon="menu">menu</button>
+</div>
+</div>
+</nav>
+<main class="pt-24 pb-stack-xl max-w-container-max mx-auto px-margin-desktop">
+<!-- Breadcrumbs -->
+<nav class="mb-12 flex items-center space-x-2 text-label-sm font-label-sm text-on-surface-variant">
+<a class="hover:text-primary transition-colors" href="#">Home</a>
+<span class="text-secondary-fixed-dim text-[10px]">•</span>
+<a class="hover:text-primary transition-colors" href="#">Collections</a>
+<span class="text-secondary-fixed-dim text-[10px]">•</span>
+<span class="text-primary font-bold">Golden Sampot</span>
+</nav>
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter">
+<!-- Image Gallery Cluster (Left/Center) -->
+<div class="lg:col-span-7 flex flex-col md:flex-row gap-4 h-fit sticky top-28">
+<div class="flex md:flex-col gap-4 overflow-x-auto md:overflow-y-auto max-h-[750px] custom-scrollbar w-full md:w-24 shrink-0">
+<div class="w-20 md:w-full aspect-[3/4] bg-surface-container cursor-pointer border border-outline-variant p-0.5">
+<img class="w-full h-full object-cover" data-alt="Close-up detail of a Royal Golden Sampot featuring a golden silk weave with intricate traditional Khmer patterns. The fabric reflects soft studio lighting, showcasing the metallic thread and fine texture of high-end Cambodian craftsmanship. The background is a minimalist, warm off-white, emphasizing the garment's rich yellow-gold tones." src="https://i.pinimg.com/736x/7e/a2/0f/7ea20f7fc2c996fd4251000ad2e3f1d0.jpg"/>
+</div>
+<div class="w-20 md:w-full aspect-[3/4] bg-surface-container cursor-pointer opacity-60 hover:opacity-100 transition-opacity">
+<img class="w-full h-full object-cover" data-alt="A medium shot of a high-fashion mannequin wearing a traditional Khmer silk wrap in vibrant gold. The lighting is editorial and soft, casting gentle shadows that define the elegant drapes and folds of the Sampot. The overall atmosphere is one of luxury and heritage, set in a modern, clean-lined boutique atelier with neutral tones." src="https://i.pinimg.com/736x/a7/f5/ce/a7f5ce2a9833402a0a0f5aab1019168e.jpg"/>
+</div>
+<div class="w-20 md:w-full aspect-[3/4] bg-surface-container cursor-pointer opacity-60 hover:opacity-100 transition-opacity">
+<img class="w-full h-full object-cover" data-alt="An abstract detail shot of gold jewelry accessories resting on a piece of rich golden Khmer silk. The composition highlights the intricate metalwork of the belt and pins against the soft, hand-woven texture of the fabric. The palette is dominated by warm yellows, ochre, and deep charcoal shadows, conveying a sense of exclusive craftsmanship and cultural pride." src="https://i.pinimg.com/736x/b6/92/c6/b692c6b1200af738ad6df88bd1455d0d.jpg"/>
+</div>
+</div>
+<div class="flex-grow aspect-[3/4] overflow-hidden bg-surface-container group relative">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="The main product image of the Royal Golden Sampot, a full-length view showcasing the entire garment's drape and flow. The silk fabric glows with a natural luster under high-key studio lights, revealing the detailed traditional geometric motifs. The styling is minimalist and sophisticated, representing a premium piece of Khmer heritage attire in a high-end atelier setting." id="main-product-image" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBTcRwTUgnP50lwzLEKr4nIF9jKTtAWg09fVzrZ6d_z11_lZcCgzUoWmHiUiTtJ7T4zkAsMEK8hAX9QmH0vs_LhDJEgogVTDh1m2PgLEn1kMLOptBM45MPx9JJxJ43oEK7bHnqN1qBVE5PkNzQdZVot7Xpyc6DEO2SZ42zVzkb3O3aJAxmQr_2ybLkWgI7syQWKSL4cW4-0l7LBCYH8-liiu3YhFtaYmPuVOtGU1v3lKyHbSwNWBWDtpOamo6NOEb9A3IqM8kpbmQ"/>
+<div class="absolute bottom-6 right-6 flex space-x-3">
+<button class="bg-white/80 backdrop-blur text-primary p-3 rounded-full hover:bg-white transition-all shadow-sm">
+<span class="material-symbols-outlined">zoom_in</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Product Details (Right) -->
+<div class="lg:col-span-5 flex flex-col pt-4">
+<header class="mb-8">
+<span class="text-label-sm font-label-sm tracking-widest text-secondary uppercase mb-2 block">Heritage Collection</span>
+<h1 class="font-headline-lg text-headline-lg text-primary leading-tight mb-4">Golden Sampot</h1>
+<div class="flex items-center space-x-4 mb-6">
+<span class="text-headline-md font-headline-md text-on-surface">$1,890.00</span>
+<span class="text-label-sm font-label-sm text-secondary px-3 py-1 border border-secondary/20">Artisan Made</span>
+</div>
+<p class="text-body-lg font-body-lg text-on-surface-variant leading-relaxed">
+                        Hand-woven over 120 hours using traditional Khmer "Chong Kiet" techniques. This masterpiece features pure golden silk threads harvested from the provinces of Takeo.
+                    </p>
+</header>
+<!-- Configuration Options -->
+<div class="space-y-10 border-t border-outline-variant pt-10">
+<!-- Sizing -->
+<div>
+<div class="flex justify-between items-center mb-4">
+<label class="font-label-lg text-label-lg text-primary uppercase">Traditional Wrap Size</label>
+<button class="text-label-sm font-label-sm text-secondary hover:underline flex items-center gap-1">
+<span class="material-symbols-outlined text-sm">straighten</span> Wrap Guide
+                            </button>
+</div>
+<div class="grid grid-cols-4 gap-3">
+<button class="border border-primary bg-primary text-white py-3 font-label-lg text-label-lg transition-all">Standard</button>
+<button class="border border-outline py-3 font-label-lg text-label-lg hover:border-primary transition-all">Petite</button>
+<button class="border border-outline py-3 font-label-lg text-label-lg hover:border-primary transition-all">Grand</button>
+<button class="border border-outline py-3 font-label-lg text-label-lg opacity-40 cursor-not-allowed">Custom</button>
+</div>
+</div>
+<!-- Bespoke Service -->
+<div class="bg-surface-container-low p-6 border-l-4 border-secondary flex items-start gap-4">
+<span class="material-symbols-outlined text-secondary text-3xl">styler</span>
+<div>
+<h4 class="font-label-lg text-label-lg text-primary mb-1">Bespoke Tailoring Included</h4>
+<p class="text-label-sm font-label-sm text-on-surface-variant">Our master artisans offer complimentary remote tailoring sessions to ensure your wrap fits the Royal silhouette perfectly.</p>
+</div>
+</div>
+<!-- Actions -->
+<div class="flex flex-col gap-4">
+<button id="order-submit-button" type="button" class="w-full bg-primary text-white py-5 font-label-lg text-label-lg tracking-[0.2em] uppercase transition-all hover:bg-on-primary-fixed-variant group flex items-center justify-center gap-4">
+    <span id="order-button-text">Inquire for Purchase</span>
+    <span id="order-button-spinner" class="hidden h-5 w-5 animate-spin rounded-full border-2 border-white border-t-transparent"></span>
+    <span class="material-symbols-outlined group-hover:translate-x-1 transition-transform">arrow_right_alt</span>
+</button>
+<a href="viewingLapel.html" class="w-full border border-primary py-5 font-label-lg text-label-lg tracking-[0.2em] uppercase transition-all hover:bg-primary-fixed-dim/10 text-center inline-flex items-center justify-center">
+                            Book Viewing Appointment
+                        </a>
+</div>
+<div id="order-success-alert" class="fixed top-6 right-6 z-50 hidden w-80 rounded-2xl border border-secondary/40 bg-white p-5 shadow-2xl shadow-secondary/10 transition-opacity duration-300 opacity-0">
+    <div class="flex items-start justify-between gap-3">
+        <div>
+            <p class="font-label-lg text-label-lg text-primary mb-2">Order placed successfully!</p>
+            <p class="text-label-sm text-on-surface-variant">Thank you — we will reach out shortly with next steps.</p>
+        </div>
+        <button id="order-alert-close" type="button" class="material-symbols-outlined text-secondary cursor-pointer">close</button>
+    </div>
+</div>
+<div class="flex justify-center items-center gap-8 py-4 border-y border-outline-variant/30 text-on-surface-variant">
+<div class="flex flex-col items-center gap-2">
+<span class="material-symbols-outlined text-2xl">public</span>
+<span class="text-label-sm font-label-sm">Global Express</span>
+</div>
+<div class="w-[1px] h-8 bg-outline-variant/50"></div>
+<div class="flex flex-col items-center gap-2">
+<span class="material-symbols-outlined text-2xl">verified</span>
+<span class="text-label-sm font-label-sm">Certified Silk</span>
+</div>
+<div class="w-[1px] h-8 bg-outline-variant/50"></div>
+<div class="flex flex-col items-center gap-2">
+<span class="material-symbols-outlined text-2xl">eco</span>
+<span class="text-label-sm font-label-sm">Sustainable</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Silk Weave Details Section -->
+<section class="mt-stack-xl">
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-stack-lg items-center">
+<div class="order-2 lg:order-1">
+<h2 class="font-headline-lg text-headline-lg text-primary mb-8">The Alchemy of Silk</h2>
+<div class="space-y-8">
+<div class="flex gap-6">
+<span class="font-display-lg text-secondary-fixed opacity-50 select-none">01</span>
+<div>
+<h3 class="font-headline-md text-headline-md mb-2">Heritage Threads</h3>
+<p class="text-body-lg text-on-surface-variant">We source our silk exclusively from the Golden Silk Farm in Banteay Srei, where rare golden silkworms produce naturally pigmented yellow thread, eliminating the need for synthetic dyes.</p>
+</div>
+</div>
+<div class="flex gap-6">
+<span class="font-display-lg text-secondary-fixed opacity-50 select-none">02</span>
+<div>
+<h3 class="font-headline-md text-headline-md mb-2">The Weaving Rhythm</h3>
+<p class="text-body-lg text-on-surface-variant">Using a multi-shaft loom, our artisans weave complex 'Pidan' patterns that represent spiritual protection and abundance, a tradition passed down through seven generations.</p>
+</div>
+</div>
+<div class="flex gap-6">
+<span class="font-display-lg text-secondary-fixed opacity-50 select-none">03</span>
+<div>
+<h3 class="font-headline-md text-headline-md mb-2">Metallic Finishing</h3>
+<p class="text-body-lg text-on-surface-variant">Fine silver threads coated in 22k gold are hand-embroidered into the borders of the Sampot, creating a subtle luminescence that shifts beautifully with movement.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="order-1 lg:order-2 aspect-square relative bg-surface-container-high overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="A macro photograph showing a hand weaving golden silk on a traditional wooden loom. The depth of field is shallow, focusing on the intersection of the threads and the artisan's experienced hand. The lighting is warm and natural, illuminating the golden shimmer of the silk in a quiet, dedicated studio atmosphere in Cambodia." src="https://khmerera.com/cdn/shop/files/Why-is-Cambodian-silk-considered-unique.jpg?v=1742822543&width=3840"/>
+<div class="absolute inset-0 border-[20px] border-surface"></div>
+</div>
+</div>
+</section>
+<!-- Matching Accessories (Curated Selection) -->
+<section class="mt-stack-xl">
+<div class="flex justify-between items-end mb-12">
+<div>
+<span class="text-label-sm font-label-sm tracking-widest text-secondary uppercase mb-2 block">Complete the Look</span>
+<h2 class="font-headline-lg text-headline-lg text-primary">Royal Accoutrements</h2>
+</div>
+<button class="group flex items-center gap-2 text-label-lg font-label-lg text-primary">
+                    View Jewelry Collection <span class="material-symbols-outlined group-hover:translate-x-1 transition-transform">east</span>
+</button>
+</div>
+<div class="grid grid-cols-2 md:grid-cols-4 gap-gutter">
+<!-- Accessory Item 1 -->
+<div class="group cursor-pointer">
+<div class="aspect-[3/4] bg-surface-container-low mb-6 overflow-hidden relative">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="A stunning gold plated Khmer belt featuring traditional floral and leaf motifs, resting on a white marble surface. The lighting is bright and clean, emphasizing the high-shine finish and meticulous craftsmanship of the accessory. The aesthetic is minimal and premium, designed to complement traditional Khmer wedding or royal attire." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDY9MCkoaXynPK4LzrVxR3e0m6fqaraIdM9-PWxcL6S2Nhcwl4_wOq1zctSBasmDPiCtfNzbBuGxEzi8o587Y11deyfj9FENNiV4aK6BTJxvdYH6CSUy58P635MjHR2cW4C91LLTqU52X9a7K-E_x8D8T0mWYoHkztJKoRHJ7x3MnLkxewyN7pxDDfSwBPNwEJROc_U2ExJ91t4Mv4hi5L5J5wJ7_iffU6ZfPudZQwyo2EvfthwFYCVSWczH83I4nwO7svFJrarYw"/>
+<button class="absolute bottom-4 right-4 bg-white/90 backdrop-blur w-10 h-10 rounded-full flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
+<span class="material-symbols-outlined text-primary" data-icon="shopping_bag">shopping_bag</span>
+</button>
+</div>
+<h4 class="font-headline-md text-[20px] text-primary mb-1">Angkorian Gold Belt</h4>
+<p class="text-label-sm text-on-surface-variant font-label-sm uppercase tracking-wider">$850.00</p>
+</div>
+<!-- Accessory Item 2 -->
+<div class="group cursor-pointer">
+<div class="aspect-[3/4] bg-surface-container-low mb-6 overflow-hidden relative">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="Elegant gold earrings with traditional Cambodian filigree work, displayed against a soft charcoal background. The jewelry catch the light, showing off the intricate textures and deep gold tones. This piece is part of a high-end heritage collection, embodying the luxury and artistic spirit of ancient Khmer designs." src="https://lh3.googleusercontent.com/aida-public/AB6AXuB39zm7Bsyk6vOknZox1XFyv5ldL7uc5CURTz6mZVSDyCezI131hNhyKjL7CSpUwijqgUG3niC9ElGXn_wFxZxuuspirzm7RJ776v-w8ZsHwlyD4TJJzmEU_y0Vsu-ZEvKwDkelIWpuWMlmHabe95B439kwqzJwHx0cApqREOUT77Gbn6qXMAPNtFOi9HUXoKdvOVQqScauXUwR7QYskxIhZnxa-myhf07_N4FQR3kc6qFOW7_Tw0D0fn6KGQ2qKYGhDCTtA3ur_g"/>
+<button class="absolute bottom-4 right-4 bg-white/90 backdrop-blur w-10 h-10 rounded-full flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
+<span class="material-symbols-outlined text-primary" data-icon="shopping_bag">shopping_bag</span>
+</button>
+</div>
+<h4 class="font-headline-md text-[20px] text-primary mb-1">Filigree Lotus Drops</h4>
+<p class="text-label-sm text-on-surface-variant font-label-sm uppercase tracking-wider">$420.00</p>
+</div>
+<!-- Accessory Item 3 -->
+<div class="group cursor-pointer">
+<div class="aspect-[3/4] bg-surface-container-low mb-6 overflow-hidden relative">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="A delicate golden hair pin with a carved sapphire center, inspired by historical Khmer royal jewelry. The pin is photographed in an editorial style with soft, directional lighting and a minimalist white background. The image highlights the fine metallic details and the vibrant blue of the gemstone, representing a bespoke luxury accessory." src="https://lh3.googleusercontent.com/aida-public/AB6AXuASw-2LdzN6T5m3mquqtXJUc8PX0UYtiN5E80rPm_zAyIbD0IV6eo8Fi3tzzhA09LZd-_gO9_N5tqTOLimJJKqRH4jxhNUrw04RCjL0_Y4gFWcEWu3C_SkHUfBB-KDC7-lGwCo0F6jfj94VZGUd1XJfAe5oR658vauEeUccnJt20AnvYwJ4P1F7DZzj_bzA-H2yLUB3rmk4hfjmRrR8A0PGQO12lwltRIRRKjzvioRED8mcfDHHx2PO_i7GTKQexjEQeeNAF3yyfw"/>
+<button class="absolute bottom-4 right-4 bg-white/90 backdrop-blur w-10 h-10 rounded-full flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
+<span class="material-symbols-outlined text-primary" data-icon="shopping_bag">shopping_bag</span>
+</button>
+</div>
+<h4 class="font-headline-md text-[20px] text-primary mb-1">Apsara Finial Pin</h4>
+<p class="text-label-sm text-on-surface-variant font-label-sm uppercase tracking-wider">$290.00</p>
+</div>
+<!-- Accessory Item 4 -->
+<div class="group cursor-pointer">
+<div class="aspect-[3/4] bg-surface-container-low mb-6 overflow-hidden relative">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="A set of four stacked gold bracelets with various traditional Khmer patterns, presented on a velvet jewelry stand. The scene is lit to create a warm, inviting glow, showcasing the different textures of each bracelet. These accessories are curated to match a Royal Golden Sampot, emphasizing the 'Quiet Luxury' aesthetic of the Khmer Atelier brand." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDdUuT7zgb7neCYrhWhLLOQHZk2oaKMIuGVmYYapGYiybtjsy_S7-VaMcW2_-_P8Yn34EgLVw3M9VlFm47o3QFjaybPDFdPEkRnM4clXGWZJ7lsbCYuGWxainB-1mgIEaXFgadI2UwogSRFeOUJUSJFu2GYJ_JF1XuZFRh_GxBhLGR-86UFf6V_6iogrZybaC6figU1YHryZ4xY5GklSKRNn66WXtcf-__dK6FNw4fEhJKUjcIW8_iRPW4Dfn0ypUvYIQxungYhjg"/>
+<button class="absolute bottom-4 right-4 bg-white/90 backdrop-blur w-10 h-10 rounded-full flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
+<span class="material-symbols-outlined text-primary" data-icon="shopping_bag">shopping_bag</span>
+</button>
+</div>
+<h4 class="font-headline-md text-[20px] text-primary mb-1">Stack of Prosperity</h4>
+<p class="text-label-sm text-on-surface-variant font-label-sm uppercase tracking-wider">$1,100.00</p>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-tertiary dark:bg-tertiary-container w-full py-stack-xl border-t border-secondary/20">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-gutter px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto text-on-tertiary dark:text-on-tertiary-container">
+<div class="md:col-span-1">
+<div class="font-headline-md text-headline-md text-secondary-fixed mb-6 uppercase tracking-widest">KHMER ATELIER</div>
+<p class="font-body-md text-body-md opacity-70 mb-8 max-w-xs">Preserving Heritage Through Every Thread. Authenticity is our only standard.</p>
+<div class="flex space-x-4 opacity-70">
+<span class="material-symbols-outlined hover:text-secondary-fixed transition-colors cursor-pointer" data-icon="facebook">face_nod</span>
+<span class="material-symbols-outlined hover:text-secondary-fixed transition-colors cursor-pointer" data-icon="photo_camera">photo_camera</span>
+</div>
+</div>
+<div class="flex flex-col space-y-4">
+<span class="font-label-lg text-label-lg text-secondary-fixed mb-2">Explore</span>
+<a class="font-label-sm text-label-sm text-on-tertiary/70 hover:text-on-tertiary transition-colors" href="#">The Silk Process</a>
+<a class="font-label-sm text-label-sm text-on-tertiary/70 hover:text-on-tertiary transition-colors" href="#">Artisan Stories</a>
+<a class="font-label-sm text-label-sm text-on-tertiary/70 hover:text-on-tertiary transition-colors" href="#">Sustainability</a>
+</div>
+<div class="flex flex-col space-y-4">
+<span class="font-label-lg text-label-lg text-secondary-fixed mb-2">Service</span>
+<a class="font-label-sm text-label-sm text-on-tertiary/70 hover:text-on-tertiary transition-colors" href="#">Shipping &amp; Returns</a>
+<a class="font-label-sm text-label-sm text-on-tertiary/70 hover:text-on-tertiary transition-colors" href="#">Contact Us</a>
+<a class="font-label-sm text-label-sm text-on-tertiary/70 hover:text-on-tertiary transition-colors" href="#">Bespoke Orders</a>
+</div>
+<div class="flex flex-col space-y-4">
+<span class="font-label-lg text-label-lg text-secondary-fixed mb-2">Atelier</span>
+<p class="font-body-md text-body-md opacity-70">Street 240, Daun Penh,<br/>Phnom Penh, Cambodia</p>
+<p class="font-body-md text-body-md opacity-70">+855 23 456 789</p>
+</div>
+</div>
+<div class="mt-20 border-t border-white/5 pt-8 text-center px-margin-mobile">
+<p class="font-label-sm text-label-sm opacity-50">© 2024 Khmer Atelier. Preserving Heritage Through Every Thread.</p>
+</div>
+</footer>
+<!-- SideNavBar Mobile -->
+<div class="h-full w-80 fixed right-0 top-0 z-[60] bg-surface translate-x-full transition-transform duration-500 shadow-xl flex flex-col p-6" id="sideNav">
+<div class="flex justify-between items-center mb-12">
+<div class="font-headline-md text-headline-md text-primary">Collections</div>
+<button class="text-on-surface" id="closeNav">
+<span class="material-symbols-outlined" data-icon="close">close</span>
+</button>
+</div>
+<div class="flex flex-col space-y-6">
+<a class="flex items-center space-x-4 p-3 hover:bg-primary-fixed-dim/10 transition-colors group" href="#">
+<span class="material-symbols-outlined text-primary" data-icon="auto_awesome">auto_awesome</span>
+<span class="font-label-lg text-label-lg">New Arrivals</span>
+</a>
+<a class="flex items-center space-x-4 p-3 hover:bg-primary-fixed-dim/10 transition-colors" href="#">
+<span class="material-symbols-outlined" data-icon="female">female</span>
+<span class="font-label-lg text-label-lg">Women's Sampot</span>
+</a>
+<a class="flex items-center space-x-4 p-3 hover:bg-primary-fixed-dim/10 transition-colors" href="#">
+<span class="material-symbols-outlined" data-icon="male">male</span>
+<span class="font-label-lg text-label-lg">Men's Sarongs</span>
+</a>
+<a class="flex items-center space-x-4 p-3 hover:bg-primary-fixed-dim/10 transition-colors" href="#">
+<span class="material-symbols-outlined" data-icon="styler">styler</span>
+<span class="font-label-lg text-label-lg">Formal Suits</span>
+</a>
+<a class="flex items-center space-x-4 p-3 hover:bg-primary-fixed-dim/10 transition-colors" href="#">
+<span class="material-symbols-outlined" data-icon="diamond">diamond</span>
+<span class="font-label-lg text-label-lg">Accessories</span>
+</a>
+</div>
+<div class="mt-auto">
+<button class="w-full bg-primary text-white py-4 font-label-lg text-label-lg uppercase tracking-widest">Book an Appointment</button>
+</div>
+</div>
+<script>
+        // Micro-interactions for gallery
+        const thumbnails = document.querySelectorAll('.md\\:w-24 .cursor-pointer');
+        const mainImage = document.getElementById('main-product-image');
+
+        thumbnails.forEach(thumb => {
+            thumb.addEventListener('click', () => {
+                const img = thumb.querySelector('img');
+                mainImage.src = img.src;
+                mainImage.dataset.alt = img.dataset.alt;
+                
+                // Update active state
+                thumbnails.forEach(t => {
+                    t.classList.remove('border', 'border-outline-variant', 'p-0.5', 'opacity-100');
+                    t.classList.add('opacity-60');
+                });
+                thumb.classList.add('border', 'border-outline-variant', 'p-0.5', 'opacity-100');
+                thumb.classList.remove('opacity-60');
+            });
+        });
+
+        // Simple fade-in animation on scroll
+        const observerOptions = {
+            threshold: 0.1
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('opacity-100', 'translate-y-0');
+                    entry.target.classList.remove('opacity-0', 'translate-y-10');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('section').forEach(section => {
+            section.classList.add('transition-all', 'duration-1000', 'opacity-0', 'translate-y-10');
+            observer.observe(section);
+        });
+
+        const orderButton = document.getElementById('order-submit-button');
+        const successAlert = document.getElementById('order-success-alert');
+        const alertClose = document.getElementById('order-alert-close');
+        const buttonText = document.getElementById('order-button-text');
+        const buttonSpinner = document.getElementById('order-button-spinner');
+
+        function showSuccessAlert() {
+            successAlert.classList.remove('hidden', 'opacity-0');
+            successAlert.classList.add('opacity-100');
+        }
+
+        function hideSuccessAlert() {
+            successAlert.classList.remove('opacity-100');
+            successAlert.classList.add('opacity-0');
+            successAlert.addEventListener('transitionend', () => {
+                if (successAlert.classList.contains('opacity-0')) {
+                    successAlert.classList.add('hidden');
+                }
+            }, { once: true });
+        }
+
+        const cartBadge = document.getElementById('cart-badge');
+        let cartCount = Number(localStorage.getItem('cartCount') || '0');
+
+        function updateCartBadge() {
+            if (!cartBadge) return;
+            if (cartCount > 0) {
+                cartBadge.textContent = cartCount;
+                cartBadge.classList.remove('hidden');
+            } else {
+                cartBadge.classList.add('hidden');
+            }
+        }
+
+        updateCartBadge();
+
+        if (orderButton && successAlert && buttonText && buttonSpinner) {
+            orderButton.addEventListener('click', () => {
+                buttonText.textContent = 'Processing...';
+                buttonSpinner.classList.remove('hidden');
+                orderButton.disabled = true;
+
+                setTimeout(() => {
+                    buttonText.textContent = 'Inquire for Purchase';
+                    buttonSpinner.classList.add('hidden');
+                    orderButton.disabled = false;
+                    cartCount += 1;
+                    localStorage.setItem('cartCount', String(cartCount));
+                    updateCartBadge();
+                    showSuccessAlert();
+
+                    setTimeout(() => {
+                        hideSuccessAlert();
+                    }, 3500);
+                }, 1000);
+            });
+        }
+
+        if (alertClose) {
+            alertClose.addEventListener('click', hideSuccessAlert);
+        }
+    </script>
+</body></html>

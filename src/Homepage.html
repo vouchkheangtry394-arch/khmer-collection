@@ -148,7 +148,16 @@
             </a>
 <div class="hidden md:flex items-center space-x-8">
 <a class="font-label-lg text-label-lg text-primary dark:text-inverse-primary border-b-2 border-secondary-fixed pb-1" href="#">Home</a>
-<a class="font-label-lg text-label-lg text-on-surface-variant dark:text-on-tertiary-container hover:text-secondary-fixed transition-all duration-300" href="Collection.html">Collection</a>
+<div class="relative">
+<button id="collection-toggle" class="font-label-lg text-label-lg text-on-surface-variant dark:text-on-tertiary-container hover:text-secondary-fixed transition-all duration-300 flex items-center gap-2" type="button" aria-expanded="false" aria-controls="collection-menu">
+Collection
+<span class="material-symbols-outlined text-sm">expand_more</span>
+</button>
+<div id="collection-menu" class="absolute left-0 top-full mt-3 hidden min-w-[180px] rounded-xl border border-outline-variant/40 bg-surface shadow-xl p-2">
+<a class="block rounded-lg px-3 py-2 text-sm font-medium text-on-surface hover:bg-surface-container-low hover:text-primary transition-colors" href="Collection.html">Women</a>
+<a class="block rounded-lg px-3 py-2 text-sm font-medium text-on-surface hover:bg-surface-container-low hover:text-primary transition-colors" href="Collection_Man.html">Men</a>
+</div>
+</div>
 <a class="font-label-lg text-label-lg text-on-surface-variant dark:text-on-tertiary-container hover:text-secondary-fixed transition-all duration-300" href="AboutPage.html">About</a>
 </div>
 <div class="flex items-center space-x-6">
@@ -372,6 +381,33 @@
             }
         });
     </script>
+<script>
+  const collectionToggle = document.getElementById('collection-toggle');
+  const collectionMenu = document.getElementById('collection-menu');
+
+  if (collectionToggle && collectionMenu) {
+    collectionToggle.addEventListener('click', (event) => {
+      event.stopPropagation();
+      const isHidden = collectionMenu.classList.contains('hidden');
+      collectionMenu.classList.toggle('hidden');
+      collectionToggle.setAttribute('aria-expanded', String(isHidden));
+    });
+
+    collectionMenu.querySelectorAll('a').forEach((link) => {
+      link.addEventListener('click', () => {
+        collectionMenu.classList.add('hidden');
+        collectionToggle.setAttribute('aria-expanded', 'false');
+      });
+    });
+
+    document.addEventListener('click', (event) => {
+      if (!collectionToggle.contains(event.target) && !collectionMenu.contains(event.target)) {
+        collectionMenu.classList.add('hidden');
+        collectionToggle.setAttribute('aria-expanded', 'false');
+      }
+    });
+  }
+</script>
 <script>
   const cartCount = Number(localStorage.getItem('cartCount') || '0');
   const cartBadge = document.getElementById('cart-badge');

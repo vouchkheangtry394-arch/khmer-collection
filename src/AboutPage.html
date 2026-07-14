@@ -135,7 +135,16 @@
 <!-- Navigation Links -->
 <div class="hidden md:flex items-center gap-8">
 <a class="font-label-lg text-label-lg text-on-surface-variant hover:text-primary transition-colors" href="#">Home</a>
-<a class="font-label-lg text-label-lg text-on-surface-variant hover:text-primary transition-colors" href="#">Collection</a>
+<div class="relative">
+<button id="collection-toggle" class="font-label-lg text-label-lg text-on-surface-variant hover:text-primary transition-colors flex items-center gap-2" type="button" aria-expanded="false" aria-controls="collection-menu">
+Collection
+<span class="material-symbols-outlined text-sm">expand_more</span>
+</button>
+<div id="collection-menu" class="absolute left-0 top-full mt-3 hidden min-w-[180px] rounded-xl border border-outline-variant/40 bg-surface shadow-xl p-2">
+<a class="block rounded-lg px-3 py-2 text-sm font-medium text-on-surface hover:bg-surface-container-low hover:text-primary transition-colors" href="Collection.html">Women</a>
+<a class="block rounded-lg px-3 py-2 text-sm font-medium text-on-surface hover:bg-surface-container-low hover:text-primary transition-colors" href="Collection_Man.html">Men</a>
+</div>
+</div>
 <a class="font-label-lg text-label-lg text-primary dark:text-inverse-primary border-b-2 border-secondary-fixed pb-1" href="#">About</a>
 
 </div>
